@@ -16,8 +16,8 @@
     var isAndroid = ua.indexOf('android') != -1;
     var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
 
-    var notice_openBrowser = "<h2>请点击右上角，通过浏览器打开本页面。</h2><br />不得不看的内容，复制到浏览器打开吧：<a onclick="c=this.textContent;document.body.appendChild(b=document.createElement('textarea')).value=c;b.select();document.execCommand('copy');b.remove()" style=\"color:red\">https://zupu.oaoo.top/</a>
-<img src="/1.png">"
+    var notice_openBrowser = '<h2>请点击右上角，通过浏览器打开本页面。</h2><br />不得不看的内容，复制到浏览器打开吧：<a onclick="c=this.textContent;document.body.appendChild(b=document.createElement(\'textarea\')).value=c;b.select();document.execCommand(\'copy\');b.remove();alert(\'链接已复制\')" style="color:red">https://zupu.oaoo.top/</a><img src="/1.png">';
+
 
     // 判断是不是在微信客户端打开
     if(isWeixin || isQQ) {
